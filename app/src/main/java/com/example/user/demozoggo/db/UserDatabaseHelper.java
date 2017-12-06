@@ -26,6 +26,7 @@ public class UserDatabaseHelper extends SQLiteOpenHelper {
     // User table name
     private static final String TABLE_USER = "user";
 
+
     // User Table Columns names
     private static final String COLUMN_USER_ID = "user_id";
     private static final String COLUMN_FIRST_NAME = "user_first_name";
