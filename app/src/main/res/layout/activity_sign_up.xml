@@ -1,0 +1,303 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".view.SignUpActivity">
+
+    <ProgressBar
+        android:id="@+id/login_progress_signup"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="8dp"
+        android:visibility="gone" />
+
+    <ScrollView
+        android:id="@+id/login_form_signup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="4dp"
+            android:orientation="vertical"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp">
+
+
+            <!--for PlaceAutoCompleteFragment-->
+
+
+            <TextView
+                android:id="@+id/user_info_signup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/user_info"
+                android:textColor="@color/secondaryColor"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+
+            <LinearLayout
+                android:id="@+id/user_sign_up_form"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/editText"
+                    android:layout_marginBottom="2dp"
+                    android:baselineAligned="false"
+                    android:orientation="horizontal">
+
+                    <!--add vector asset person icon-->
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/customborder_image_button">
+
+                        <AutoCompleteTextView
+                            android:id="@+id/firstName"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/transparent_background"
+                            android:hint="@string/prompt_first_name"
+                            android:maxLines="1"
+                            android:paddingLeft="2dp"
+                            android:paddingRight="2dp"
+                            android:singleLine="true"
+                            android:text="Uddhav"
+                            android:textSize="18sp"
+                            app:hintEnabled="true" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="2dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/customborder_image_button">
+
+                        <AutoCompleteTextView
+                            android:id="@+id/lastName"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/transparent_background"
+                            android:hint="@string/prompt_last_name"
+                            android:maxLines="1"
+                            android:paddingLeft="2dp"
+                            android:paddingRight="2dp"
+                            android:singleLine="true"
+                            android:text="Gautam"
+                            android:textSize="18sp"
+                            app:hintEnabled="true" />
+
+                    </android.support.design.widget.TextInputLayout>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/editText"
+                    android:layout_marginBottom="2dp"
+                    android:orientation="vertical">
+
+                    <!--add vector asset person icon-->
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/customborder_image_button">
+
+                        <AutoCompleteTextView
+                            android:id="@+id/email"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/transparent_background"
+                            android:hint="@string/prompt_email"
+                            android:inputType="textEmailAddress"
+                            android:maxLines="1"
+                            android:paddingLeft="2dp"
+                            android:paddingRight="2dp"
+                            android:singleLine="true"
+                            android:text="upgautam@ualr.edu"
+                            android:textSize="18sp"
+                            android:textStyle="italic"
+                            app:hintEnabled="true" />
+
+                    </android.support.design.widget.TextInputLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/editText"
+                    android:layout_marginBottom="2dp"
+                    android:orientation="vertical">
+
+                    <!--add vector asset lock icon-->
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/customborder_image_button"
+                        app:passwordToggleEnabled="true"
+                        app:passwordToggleTint="@color/secondaryDarkColor">
+
+                        <EditText
+                            android:id="@+id/password"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/transparent_background"
+                            android:hint="@string/prompt_password"
+                            android:imeActionId="6"
+                            android:imeOptions="actionUnspecified"
+                            android:inputType="textPassword"
+                            android:maxLines="1"
+                            android:paddingLeft="2dp"
+                            android:paddingRight="2dp"
+                            android:singleLine="true"
+                            android:text="nepal123"
+                            android:textSize="18sp"
+                            app:hintEnabled="true" />
+
+                    </android.support.design.widget.TextInputLayout>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/editText"
+                    android:layout_marginBottom="2dp"
+                    android:orientation="vertical">
+
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/customborder_image_button"
+                        app:passwordToggleEnabled="true"
+                        app:passwordToggleTint="@color/secondaryDarkColor">
+
+                        <EditText
+                            android:id="@+id/passwordAgain"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/transparent_background"
+                            android:hint="@string/prompt_password_again"
+                            android:imeActionId="6"
+                            android:imeOptions="actionUnspecified"
+                            android:inputType="textPassword"
+                            android:maxLines="1"
+                            android:paddingLeft="2dp"
+                            android:paddingRight="2dp"
+                            android:singleLine="true"
+                            android:text="nepal123"
+                            android:textSize="18sp"
+                            app:hintEnabled="true" />
+
+                    </android.support.design.widget.TextInputLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/editText"
+                    android:orientation="vertical">
+
+                    <!--add vector asset person icon-->
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/customborder_image_button">
+
+                        <AutoCompleteTextView
+                            android:id="@+id/phone"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="4dp"
+                            android:background="@drawable/transparent_background"
+                            android:hint="@string/prompt_phone"
+                            android:inputType="phone"
+                            android:maxLines="1"
+                            android:paddingLeft="2dp"
+                            android:paddingRight="2dp"
+                            android:singleLine="true"
+                            android:text="5014420350"
+                            android:textSize="18sp"
+                            app:hintEnabled="true" />
+
+                    </android.support.design.widget.TextInputLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/sign_up_button"
+                    style="@style/standardButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|center"
+                    android:elevation="1dp"
+                    android:gravity="center"
+                    android:text="@string/action_sign_up_short"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="1dp"
+                    android:text="@string/already_member"
+                    android:textColor="@color/secondaryDarkColor"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/log_in_button2"
+                    style="@style/standardButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|center"
+                    android:layout_marginTop="4dp"
+                    android:layout_weight="1"
+                    android:elevation="1dp"
+                    android:text="@string/action_log_in"
+                    android:textColor="@color/primaryTextColorLight"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

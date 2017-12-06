@@ -1,0 +1,71 @@
+<resources>
+    <string name="app_name">zoggo-mobile</string>
+    <string name="title_activity_login">Sign in</string>
+
+    <string name="GOOGLE_CLOUD_API_KEY">AIzaSyBFNuaNkxptVy0TjdJBuxod68NJwCc_eHM</string>
+
+
+    <!-- Strings related to login -->
+    <string name="prompt_email_username">Email/Username</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_user_name">Username</string>
+    <string name="prompt_full_name">Fullname</string>
+    <string name="prompt_first_name">Firstname</string>
+    <string name="prompt_last_name">Lastname</string>
+    <string name="prompt_phone">Phone</string>
+
+    <string name="prompt_user_address_line">Address</string>
+
+
+    <string name="prompt_user_address_line1">Address Line1</string>
+    <string name="prompt_user_address_line2">(Optional) Address Line2</string>
+    <string name="prompt_user_ZipPostal_code">Zip/Postal Code</string>
+    <string name="prompt_user_StateProvince">State/Province</string>
+    <string name="prompt_user_Country">Country</string>
+
+
+    <string name="prompt_password">Password </string>
+    <string name="prompt_password_again">Repeat Password </string>
+
+    <string name="action_log_in">Log-in</string>
+    <string name="action_register_user">Register your user account</string>
+    <string name="action_log_in_short">Log-in</string>
+    <string name="action_register_user_short">Register</string>
+
+
+    <string name="action_sign_up">Sign-up Your Account</string>
+    <string name="action_sign_up_short">Sign-up</string>
+
+
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email completions."</string>
+    <string name="logo_signingstream_content_description"> Signing stream logo </string>
+    <string name="title_activity_login2">Sign in</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="action_lock_button">Password lock button</string>
+    <string name="action_zoggo_logo">Zoggo Logo</string>
+
+    <string name="facebook_app_id">156664751750804</string>
+    <string name="fb_login_protocol_scheme">fb156664751750804</string>
+    <string name="don_t_have_account">Don\'t have account?</string>
+    <string name="signup_using_facebook">Signup using Facebook</string>
+    <string name="user_address">User Address</string>
+    <string name="already_member">Already member?</string>
+    <string name="user_info">User Info.</string>
+    <string name="email_text">upgautam@ualr.edu</string>
+    <string name="default_pass_text">123456789</string>
+    <string name="prompt_email_only">Email address</string>
+    <string name="action_reset_password">Reset Password</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="error_invalid_first_name">Invalid first name</string>
+    <string name="error_invalid_last_name">Invalid last name</string>
+    <string name="error_invalid_phone">invalid phone</string>
+</resources>

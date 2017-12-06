@@ -1,0 +1,31 @@
+<!--?xml version="1.0" encoding="UTF-8"?-->
+<resources>
+
+    <color name="primaryColor">#ffffff</color>
+    <color name="primaryLightColor">#ffffff</color>
+    <color name="primaryDarkColor">#ffffff</color>
+
+    <color name="secondaryColor">#763FA3</color>
+    <color name="secondaryLightColor">#9f79bf</color>
+    <color name="secondaryDarkColor">#633191</color>
+    <color name="primaryTextColor">#000000</color>
+    <color name="primaryTextColorLight">#D1D6D2</color>
+    <color name="secondaryTextColor">#ffffff</color>
+    <color name="secondaryTextColorLight">#ffffff</color>
+
+
+    <color name="background_material_light">#ffffff</color>
+    <color name="background_material_dark">#ffffff</color>
+    <color name="primary_text_material_dark">#212121</color>
+    <color name="foreground_material_light">#d9d9d8</color>
+
+
+    <!--gradient background-->
+    <color name="gradient_start">@color/primaryColor</color>
+    <color name="gradient_end">#e8f5e9</color>
+
+
+    <color name="colorTransparent">#00000000</color>
+
+
+</resources>
